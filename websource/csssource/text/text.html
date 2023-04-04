@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 글자 크기 
+           절대 크기 : xx-samll | x-samll | small | medium | large | x-large | xx-large
+           상대 크기 : 부모 요소의 글자 크기를 기준으로 더 크게, 더 작게 표시
+           크기 : 브라우저와 상관없이 글자 크기 직접 지정
+           백분율 : 부모 요소의 글자 크기를 기준으로 %를 계산해 보기
+
+           크기 직접 지정
+           1) em : 1em == 16px(body에 특별히 지정한 크기가 없다면 기본값)
+           2) px(픽셀)
+           3) pt(포인트)
+        
+        
+        */
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1em;
+        font-weight: 600; /*글자 굵기 : bold, normal, bolder, 100~900 숫자 가능(400 == normal, 700:bold) */
+      }
+      p.txt {
+        font-style: oblique; /* normal, italic, oblique */
+      }
+    </style>
+  </head>
+  <body>
+    <!--  글꼴 관련
+        - 기본 글꼴 지정 => 사용자 컴퓨터에 설치되어있는 글꼴
+        - 웹 폰트사용
+     -->
+    <h1>제목</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate
+      reiciendis et voluptate quas laudantium itaque odit dignissimos,
+      assumenda, atque accusamus tenetur asperiores amet officiis modi facilis
+      porro similique magni!
+    </p>
+    <p class="txt">나폴리, 이탈리아</p>
+  </body>
+</html>
